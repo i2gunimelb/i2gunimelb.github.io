@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Gallery</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-branding">
+        <h1 class="site-title"><a href="i2g1.html" rel="home"><img src="images/i2g2.png" height=60 width=60></a></h1>
+    </div><!-- .site-branding -->
+
+    <div class="hamburger-menu">
+        <div class="menu-icon">
+            <img src="images/menu-icon.png" alt="menu icon">
+        </div><!-- .menu-icon -->
+
+        <div class="menu-close-icon">
+            <img src="images/x.png" alt="menu close icon">
+        </div><!-- .menu-close-icon -->
+    </div><!-- .hamburger-menu -->
+</header><!-- .site-header -->
+
+<nav class="site-navigation flex flex-column justify-content-between">
+    <div class="site-branding d-none d-lg-block ">
+        <h1 class="site-title"><a href="i2g1.html" rel="home"><img src="images/i2g2.png" height=100 width=100></a></h1>
+    </div><!-- .site-branding -->
+
+    <ul class="main-menu flex flex-column justify-content-center">
+        <li class="current-menu-item"><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+
+    <div class="social-profiles">
+        <ul class="flex justify-content-start justify-content-lg-center align-items-center">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+    </div><!-- .social-profiles -->
+</nav><!-- .site-navigation -->
+
+<div class="nav-bar-sep d-lg-none"></div>
+
+<div class="outer-container">
+    <div class="container portfolio-page">
+      
+                <ul class="breadcrumbs flex align-items-center">
+                    <li><a href="#">Home</a></li>
+                    <li>Portfolio</li>
+                </ul><!-- .breadcrumbs -->
+            
+
+        <!-- Images used to open the lightbox -->
+	<div class="row1">
+  		<div class="col-12 col-md-6 col-lg-3 column1">
+			<div class="portfolio-content">
+    			<figure><img src="images/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"></figure>
+			</div>
+  		</div>
+  		<div class="col-12 col-md-6 col-lg-3 column1">
+			<div class="portfolio-content">
+    			<figure><img src="images/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"></figure>
+			</div>
+  		</div>
+  		<div class="col-12 col-md-6 col-lg-3 column1">
+			<div class="portfolio-content">
+    			<figure><img src="images/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"></figure>
+			</div>
+  		</div>
+  		<div class="col-12 col-md-6 col-lg-3 column1">
+			<div class="portfolio-content">
+    			<figure><img src="images/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"></figure>
+			</div>
+  		</div>
+	</div>
+
+	<!-- The Modal/Lightbox -->
+	<div id="myModal" class="modal">
+  		<span class="close cursor" onclick="closeModal()">&times;</span>
+  			<div class="modal-content">
+
+    				<div class="mySlides">
+      					<div class="numbertext">1 / 4</div>
+      					<img src="images/1.jpg" style="width:50%" class="center1">
+    				</div>
+
+    				<div class="mySlides">
+      					<div class="numbertext">2 / 4</div>
+      					<img src="images/2.jpg" style="width:50%" class="center1">
+    				</div>
+
+    				<div class="mySlides">
+      					<div class="numbertext">3 / 4</div>
+      					<img src="images/3.jpg" style="width:50%" class="center1">
+    				</div>
+
+    				<div class="mySlides">
+      					<div class="numbertext">4 / 4</div>
+      					<img src="images/4.jpg" style="width:50%" class="center1">
+    				</div>
+
+    					<!-- Next/previous controls -->
+    					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+  			</div>
+	</div>
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+       
+    </div><!-- .container -->
+</div><!-- .outer-container -->
+
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>
