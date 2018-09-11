@@ -1,6 +1,6 @@
 /*--
 Author: Shatabdi
-/
+--*/
 body{
 	margin:0;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -28,7 +28,7 @@ ul,label{
 body a:hover{
 	text-decoration:none;
 }
-/*--baner--*/
+/*--banner--*/
 .banner {
 	background:url(../images/Banner1.jpg)no-repeat center 0px;
 	-webkit-background-size:cover;
