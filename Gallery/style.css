@@ -142,7 +142,7 @@ a:hover, a:active {
 
 .main-menu li a:hover,
 .main-menu li.current-menu-item a {
-    color: #f0437e;
+    color: #008B8B;
 }
 
 /*
@@ -215,7 +215,7 @@ a:hover, a:active {
 
     .main-menu li:hover::after,
     .main-menu li.current-menu-item::after {
-        color: #f0437e;
+        color: #008B8B;
     }
 
     .site-navigation {
@@ -631,7 +631,7 @@ a:hover, a:active {
 .blog-page .blog-content figure img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 230px;
 }
 
 .blog-page .blog-content .entry-content {
@@ -643,7 +643,7 @@ a:hover, a:active {
 }
 
 .blog-page .blog-content:hover {
-    background: #f0437e;
+    background: #008B8B;
 }
 
 .blog-page .blog-content header {
