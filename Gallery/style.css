@@ -142,7 +142,7 @@ a:hover, a:active {
 
 .main-menu li a:hover,
 .main-menu li.current-menu-item a {
-    color: #008B8B;
+    color: #094183;
 }
 
 /*
@@ -215,7 +215,7 @@ a:hover, a:active {
 
     .main-menu li:hover::after,
     .main-menu li.current-menu-item::after {
-        color: #008B8B;
+        color: #094183;
     }
 
     .site-navigation {
@@ -643,7 +643,7 @@ a:hover, a:active {
 }
 
 .blog-page .blog-content:hover {
-    background: #008B8B;
+    background: #094183;
 }
 
 .blog-page .blog-content header {
