@@ -1,5 +1,5 @@
 /*--
-Author: Shatabdi
+Author: I2G
 --*/
 body{
 	margin:0;
@@ -220,7 +220,6 @@ p {
     width: 0;
     height: 0;
     position: absolute;
-	/*-- w3layouts --*/
     content: '';
     top: 9px;
     right: -14px;
@@ -319,8 +318,7 @@ p {
 /*--//skills--*/
 /*--portfolio--*/
 /*--SAP--*/
-ul.resp-tabs-list {  
-/*-- w3layouts --*/
+ul.resp-tabs-list {
 background: #DCDCDC;
 }
 .sap_tabs{
